@@ -1,0 +1,48 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.grid {
+}
+
+span.grid_square {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: solid 2px black;
+    line-height: 40px;
+}
+
+.grid_square > .letter {
+    text-align: center;
+    font: 40px "Courier";
+
+}
+
+.grid_square > .number {
+    vertical-align: top;
+    text-align: left;
+    font: 12px "Courier";
+
+}
+
+span.grid_square.selected {
+    border: solid 2px #0F0;
+    background-color: #3B3;
+}
+
+/*TODO
+ * - numbers in boxes, not just text
+ *
+ *
+ */
+
+span.grid_square.black {
+    /*background-color: #888;*/
+    background-color: black;
+}
