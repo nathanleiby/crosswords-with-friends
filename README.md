@@ -4,6 +4,5 @@ Multiplayer cooperative solving of crossword puzzles
 
 TODOS:
 
-- allow selecting a square
-- allow selecting a square and then changing its letter
-
+- Send socket event when a letter is changed
+- Show connected users

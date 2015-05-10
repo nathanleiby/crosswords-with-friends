@@ -3,14 +3,21 @@ extends layout
 block content
   h1= title
 
+
   div(class="grid")
-    each row, idx in grid.rows
-      div(id=idx, class="grid_row")
-        each square in row
+    each row, row_idx in grid.rows
+      div(id="row_"+row_idx, class="grid_row")
+        each square, col_idx in row
           - var square_class = square.black ? "grid_square black" : "grid_square"
-          span(class=square_class)
+          span(id="row_"+row_idx+"_col_"+col_idx, class=square_class)
             span(class="number")= 89
             span(class="letter")= square.correct_letter
+
+  div(class="chatz")
+    ul(id="messages")
+    form(action="")
+      input(id="m")
+      button Send
 
   div(class="clues")
     div(class="across")
