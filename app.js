@@ -1,4 +1,4 @@
-var express = require('express.io');
+var express = require('express');
 var socket_io = require( "socket.io" );
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -6,8 +6,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+//var routes = require('./routes/index');
+//var users = require('./routes/users');
 
 // Express
 var app          = express();
