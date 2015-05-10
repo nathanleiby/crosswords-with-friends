@@ -33,7 +33,11 @@ span.grid_square {
 
 span.grid_square.selected {
     border: solid 2px #0F0;
-    background-color: #3B3;
+    background-color: rgba(48, 191, 48, 1);
+}
+
+span.grid_square.highlighted {
+    background-color: rgba(0, 255, 0, 0.3);
 }
 
 /*TODO

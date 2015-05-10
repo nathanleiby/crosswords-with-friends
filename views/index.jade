@@ -9,11 +9,11 @@ block content
       div(id="row_"+row_idx, class="grid_row")
         each square, col_idx in row
           - var square_class = square.black ? "grid_square black" : "grid_square"
-          span(id="row_"+row_idx+"_col_"+col_idx, class=square_class)
+          span(id="row_"+row_idx+"_col_"+col_idx, data-row=row_idx, data-col=col_idx, class=square_class)
             span(class="number")= 89
             span(class="letter")= square.correct_letter
 
-  div(class="chatz")
+  // div(class="chatz")
     ul(id="messages")
     form(action="")
       input(id="m")

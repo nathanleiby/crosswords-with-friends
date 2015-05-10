@@ -40,23 +40,16 @@ app.get('/', function(req, res, next) {
 
 //app.use('/users', users);
 
-/*// Setup the ready route, and emit talk event.*/
-//app.io.route('ready', function(req) {
-    //req.io.emit('talk', {
-        //message: 'io event from an io route on the server'
-    //})
-//})
-//
 io.on('connection', function(socket){
   console.log('a user connected');
   socket.on('disconnect', function(){
     console.log('user disconnected');
   });
 
-  socket.on('chat message', function(msg){
-    console.log('message: ' + msg);
-    io.emit('chat message', msg);
-  });
+  //socket.on('chat message', function(msg){
+    //console.log('message: ' + msg);
+    //io.emit('chat message', msg);
+  //});
 
   socket.on('set_square_text', function(msg){
     console.log('message: ' + msg);
